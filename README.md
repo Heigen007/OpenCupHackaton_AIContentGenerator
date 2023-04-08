@@ -1,4 +1,10 @@
-# chatGPT-example
+# nFactorial-AI-Cup-AppTrack
 
-Here I tried using open OpenAI API for ChatGpt AI
-You can try to see his opportunities
+## < Your Name >
+
+
+## < Your App's Name >
+
+
+## Typeform to submit:
+https://8ce4yw1bi3g.typeform.com/to/NXbENSKC
