@@ -18,7 +18,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const replicate = new Replicate({
-    auth: "r8_Rgf6wJndndueEWC86XMtm1DISUOF7wV26lR4r",
+    auth: process.env['AUTH'],
 });
 
 function makeQuestion(obj){
