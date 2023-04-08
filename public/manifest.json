@@ -1,0 +1,22 @@
+{
+    "name":"ArticleSnap",
+    "short_name":"ArticleSnap",
+    "start_url":"index.html",
+    "display":"fullscreen",
+    "background_color":"#5900b3",
+    "theme_color":"black",
+    "scope": ".",
+    "description":"ArticleSnap - learn new!",
+    "icons":[
+        {
+            "src":"logo.png",                     
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"logo.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+  ]
+}
