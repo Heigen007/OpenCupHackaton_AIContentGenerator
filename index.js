@@ -86,9 +86,13 @@ async function analyseText(text, pictureType){
 }
 
 app.post("/makeRequest", async (req, res) => {
-    var result = await makeRequest(makeQuestion(req.body))
-    result = await analyseText(result.choices[0].text, req.body.pictureType)
-    res.send({ answer: result })
+    try{ 
+        var result = await makeRequest(makeQuestion(req.body))
+        result = await analyseText(result.choices[0].text, req.body.pictureType)
+        res.send({ answer: result })
+    } catch(e) {
+        res.status(500).send(e)
+    }
 })
 
 async function getUrl(prompt, pictureType){
