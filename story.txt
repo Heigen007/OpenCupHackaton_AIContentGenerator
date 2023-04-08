@@ -1,0 +1,21 @@
+PART 1:
+NAME: Eager Programmers
+DESCRIPTION: A group of eager programmers are gathered around a table, discussing and brainstorming ideas for a programming hackathon they’re entering. They’re looking at their laptops and writing down ideas on a whiteboard.
+
+PART 2:
+NAME: Ready to Code
+DESCRIPTION: All the programmers are now armed with their laptops and are ready to start coding. They’re all eagerly typing away, working on their individual projects 
+for the hackathon.
+
+PART 3:
+NAME: Friendly Competition
+DESCRIPTION: The competition is fierce, but all the programmers are in good spirits. They’re trading tips and helping each other out, and the atmosphere is one of friendly collaboration.
+
+PART 4:
+NAME: Final Judgement
+DESCRIPTION: After a long day of coding and debugging, the teams are finally ready to present their projects to the judges. They each take turns presenting their work, and the judging panel is paying close attention.
+
+PART 5:
+NAME: Winners Announced
+DESCRIPTION: After much deliberation, the judges have finally made their decision. The winners are announced, and the winning team is awarded a prize. The programmers 
+congratulate each other and celebrate their success.

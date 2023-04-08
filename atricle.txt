@@ -1,0 +1,14 @@
+NAME: A Group of Programmers
+DESCRIPTION: A group of programmers gathered together in a room to take part in a hackathon. All of them are focused on their laptops and ready to start coding. They all have different backgrounds and experiences, but they all share the same goal of creating the best hackathon project.
+
+NAME: Brainstorming Ideas
+DESCRIPTION: A group of programmers are huddled together brainstorming ideas for their hackathon project. They are discussing their ideas, collaborating, and coming up with creative solutions to the problem they are trying to solve.
+
+NAME: Prototyping
+DESCRIPTION: A group of programmers are working together to prototype their hackathon project. They are taking their ideas and turning them into an actual product. The
+
+NAME: Presenting
+DESCRIPTION: A group of programmers have just finished their hackathon project and are now presenting it to the judging panel. They are discussing their project, showcasing the features, and demonstrating how it works. They are all feeling confident and excited to see what the judges think.
+
+NAME: Celebrating
+DESCRIPTION: A group of programmers have just won the hackathon competition and are celebrating their victory. They are hugging, high-fiving, and posing for photos with their winning project. They have worked hard and come out successful in the end.
