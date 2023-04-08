@@ -86,7 +86,6 @@ async function analyseText(text, pictureType){
 }
 
 app.post("/makeRequest", async (req, res) => {
-    return res.send("horray")
     try{ 
         var result = await makeRequest(makeQuestion(req.body))
         result = await analyseText(result.choices[0].text, req.body.pictureType)
