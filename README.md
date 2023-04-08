@@ -1,9 +1,9 @@
 # nFactorial-AI-Cup-AppTrack
 
-## < Your Name >
+## Grigoriy Kovrizhnykh
 
 
-## < Your App's Name >
+## ArticleSnap
 
 
 ## Typeform to submit:
