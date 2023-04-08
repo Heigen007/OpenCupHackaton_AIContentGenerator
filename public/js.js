@@ -9,7 +9,7 @@ $(document).ready(function() {
         const about = $("#about").val() || "How pyramids are build";
         const selectedNumber = $("#number-select").val();
 
-        fetch(window.location.href+ 'makeRequest', {
+        fetch("https://open-cup-hackaton-ai-content-generator.vercel.app/"+ 'makeRequest', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8'
