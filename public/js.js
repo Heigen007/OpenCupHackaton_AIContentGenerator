@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $("#generator-form").submit(function(event) {
         event.preventDefault();
-        $("#loading-message").removeClass("d-none");
+        $("#layer").removeClass("d-none");
         $("#result").empty();
         
         const textType = $("#text-type").val();
@@ -25,13 +25,27 @@ $(document).ready(function() {
             return response.json()
         })
         .then(res => {
-            $("#loading-message").addClass("d-none");
+            $("#layer").addClass("d-none");
             $("#result").html(res.answer);
         })
         .catch(e => {
             console.log(e);
-            $("#loading-message").addClass("d-none");
+            $("#layer").addClass("d-none");
             $("#result").html("<p class='text-danger'>An error occurred. Please try again.</p>");
         })
     });
+});
+
+// some vanilla js
+window.addEventListener('load', () => {
+    if (localStorage.getItem('dark-mode') === 'true') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkModeToggle').checked = true;
+    }
+    document.body.style.opacity = '1';
+});
+
+document.getElementById('darkModeToggle').addEventListener('change', function (e) {
+    document.body.classList.toggle('dark-mode', e.target.checked);
+    localStorage.setItem('dark-mode', e.target.checked);
 });

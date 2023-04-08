@@ -1,8 +1,8 @@
 const express = require("express");
 require('dotenv').config()
-const { Configuration, OpenAIApi } = require("openai");
+const { Configuration, OpenAIApi } = require("openai"); // text
 const cors = require("cors")
-const Replicate = require("replicate")
+const Replicate = require("replicate") // pictures
 
 const PORT = 3000
 const model = "prompthero/openjourney:9936c2001faa2194a261c01381f90e65261879985476014a0a37a334593a05eb";
@@ -50,14 +50,17 @@ async function makeRequest(question){
 async function analyseText(text, pictureType){
     var realNames = []
     var realDescriptions = []
+    // here is parsing from chatGPT message on distributed labels of the pictures and description
     var imageNames = text.split("NAME: ")
     var descriptionNames = text.split("DESCRIPTION:")
     imageNames.shift()
     descriptionNames.shift()
     for (const el of imageNames) {
+        // all options for random text output are provided
         realNames.push(el.split("DESCRIPTION:")[0].split("PART")[0].split("Part")[0])
     }
     for (const el of descriptionNames) {
+        // all options for random text output are provided
         realDescriptions.push(el.split("NAME:")[0].split("PART")[0].split("Part")[0])
     }
     try {
@@ -104,5 +107,4 @@ async function getUrl(prompt, pictureType){
     return output
 }
 
- 
 app.listen(PORT, () => console.log("Started on port " + PORT));

@@ -5,7 +5,14 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
 }
+
+.container{
+    padding-bottom: 10px;
+}
+
 body::before {
     content: "";
     position: absolute;
@@ -16,19 +23,63 @@ body::before {
     background-image: linear-gradient(120deg, rgb(160 216 162 / 40%), rgba(82, 198, 198, 0.47)), url(./leaves.png);
     z-index: -1;
 }
+
 h1 {
     font-weight: bold;
     color: #2c3e50;
 }
+
 .form-label {
     font-weight: bold;
     color: #2c3e50;
 }
+
 .btn-primary {
     background-color: #3498db;
     border-color: #3498db;
 }
+
 .btn-primary:hover {
     background-color: #2980b9;
     border-color: #2980b9;
+}
+
+body.dark-mode {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+body.dark-mode::before {
+    background-image: linear-gradient(120deg, rgb(40 53 40 / 60%), rgb(43 104 104 / 60%)), url(./leaves.png);
+    opacity: 0.5;
+}
+
+body.dark-mode h1, body.dark-mode .form-label, body.dark-mode .container {
+    color: #f8f9fa;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #3a3f46;
+    border-color: #3a3f46;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #31353a;
+    border-color: #31353a;
+}
+
+#layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1003;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(49, 49, 49, 0.5);
+    backdrop-filter: blur(3px);
 }
