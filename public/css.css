@@ -44,7 +44,9 @@ h1 {
     border-color: #2980b9;
 }
 
-body.dark-mode {
+body.dark-mode, body.dark-mode .modal-header,
+body.dark-mode .modal-body,
+body.dark-mode .modal-footer {
     background-color: #212529;
     color: #f8f9fa;
 }
@@ -54,7 +56,7 @@ body.dark-mode::before {
     opacity: 0.5;
 }
 
-body.dark-mode h1, body.dark-mode .form-label, body.dark-mode .container {
+body.dark-mode h1, body.dark-mode .form-label, body.dark-mode .container{
     color: #f8f9fa;
 }
 

@@ -23,6 +23,7 @@
                 <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
             </div>
 
+
             <h1 class="text-center my-4">ArticleSnap</h1>
             <form id="generator-form">
                 <div class="form-group mb-3">
@@ -57,6 +58,32 @@
                     <input type="text" class="form-control" id="about" placeholder="How pyramids are build">
                 </div>
                 <button type="submit" class="btn btn-primary">Generate</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Open Instructions
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Instructions</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>Here are some instructions:</p>
+                                <ol>
+                                    <li>Choose the text type: it can be an article or a story.</li>
+                                    <li>Choose the picture type. Pictures in the article will be drawn in that style.</li>
+                                    <li>Decide how many parts (with pictures) the article will have.</li>
+                                    <li>Set the topic of the article/story. It can be incredibly detailed (depending on your wishes).</li>
+                                    <li>Generate the article!</li>
+                                </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
             <div class="mt-4" id="result-container">
                 <div id="result"></div>
