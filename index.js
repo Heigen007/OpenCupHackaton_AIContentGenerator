@@ -8,7 +8,7 @@ const PORT = 3000
 const model = "prompthero/openjourney:9936c2001faa2194a261c01381f90e65261879985476014a0a37a334593a05eb";
 
 const app = express();
-app.use(cors())
+app.use(cors());
 app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 
@@ -26,10 +26,10 @@ function makeQuestion(obj){
     var finalText = ""
     if(textType == "story"){
         finalText = "Write me a story consist of "+ selectedNumber + " parts about " + about +
-            ". Each part should have the name of the picture(NAME:) and clear and long description of the description of a picture(DESCRIPTION:)"
+            ". Each part should have the name of the picture(NAME:) and clear and long description of a picture(DESCRIPTION:)"
     } else if(textType == "article") {
         finalText = "Write me an article consist of "+ selectedNumber + " parts about " + about +
-            ". Each part should have the name of the picture(NAME:) and clear and long description of the description of a picture(DESCRIPTION:)"
+            ". Each part should have the name of the picture(NAME:) and clear and long description of a picture(DESCRIPTION:)"
     }
     return finalText
 }
@@ -79,7 +79,7 @@ async function analyseText(text, pictureType){
         var response = ""
         for (let i = 0; i < realDescriptions.length; i++) {
             response += "<p>" + realDescriptions[i] + "</p>"
-            response += `<img src="${namedImageURLs[i]}" alt="Generated Image" class="img-fluid">`
+            response += `<img src="${namedImageURLs[i]}" alt="Generated Image ${i}" class="img-fluid">`
         }
         return response
     } catch (error) {
